@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: rgb(245, 244, 255);
 }
 
 html {
@@ -16,9 +17,12 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: #084887;
 }
 
+h1,h3 {
+  color : #F3B61F;
+}
 /* TRANSITION */
 
 a,
@@ -36,24 +40,23 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 10vh;
+  background-color: #084887;
 }
 
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 1.5rem;
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
-  text-decoration-color: white;
 }
 
 a:hover {
-  color: grey;
-  text-decoration: underline;
+  color: #F3B61F;
+  text-decoration: none;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
 }
@@ -166,7 +169,8 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 90vh;
+  position: relative;
 }
 
 .section__pic-container {
@@ -231,7 +235,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: #084887 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -241,12 +245,12 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: #084887;
   color: white;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: #052d55;
 }
 
 .btn-color-2 {
@@ -254,7 +258,7 @@ section {
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border: #F3B61F 0.1rem solid;
 }
 
 .btn-container {
@@ -386,7 +390,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 90vh;
 }
 
 .contact-info-upper-container {
@@ -398,6 +402,7 @@ article .icon {
   background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
+  background-color: #084887;
 }
 
 .contact-info-container {
@@ -421,11 +426,6 @@ article .icon {
 }
 
 /* FOOTER SECTION */
-
-footer {
-  height: 26vh;
-  margin: 0 1rem;
-}
 
 footer p {
   text-align: center;
