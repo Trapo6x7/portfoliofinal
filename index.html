@@ -44,8 +44,7 @@
 
   <main>
 
-
-  </div>     <article class="window2">
+    <article class="window2">
     <div class="title-bar">
       <div class="buttons">
       <div class="button close"></div>
@@ -56,8 +55,8 @@
   </div>
   <div class="content flex-col">
     <section class="flex justify-center">
-<div class="flex justify-center">
-
+<div class="flex-col justify-center">
+<div class="flex">
     <div id="profile">
       <article class="window">
         <div class="title-bar">
@@ -69,7 +68,7 @@
           <span></span>
         </div>
         <div class="content flex-col">
-          <div>
+          <div id="toggleDiv1">
             <p class="section__text__p1">Hello; I'm</p>
             <h1 class="title">Mathias Chambriard</h1>
             <p class="section__text__p2">Junior Developer</p>
@@ -83,7 +82,7 @@
               Contact Info
             </button>
           </div>
-        </div>    <article class="window ">
+        </div>    <article class="window none1">
         <div class="title-bar">
           <div class="buttons">
             <div class="button close"></div>
@@ -121,7 +120,7 @@
           <span></span>
         </div>
         <div class="content flex-col">
-          <p>
+          <p id="toggleDiv2">
             <!-- Développeur débutant avec une expérience confirmée en graphisme,
             je combine créativité et compétences techniques pour concevoir des
             interfaces esthétiques et fonctionnelles. Ma maîtrise du design
@@ -136,21 +135,7 @@
           </p>
 
    
-            </div>     <article class="window">
-              <div class="title-bar">
-                <div class="buttons">
-                <div class="button close"></div>
-                <div class="button minimize"></div>
-                <div class="button maximize"></div>
-              </div>
-              <span></span>
-            </div>
-            <div class="content flex-col">
-              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
-            </article> <article class="window">
+            </div>     <article class="window none2">
               <div class="title-bar">
                 <div class="buttons">
                   <div class="button close"></div>
@@ -168,7 +153,8 @@
           </article>         
             </div>    
    </div>
-
+</div>
+<div class="flex">
    <div class="flex-col">    
     <article class="window">
   <div class="title-bar">
@@ -179,11 +165,13 @@
     </div>
     <span></span>
   </div>
-  <div class="content flex-col">
+  <div class="content flex-col" id="toggleDiv3">
     <p class="section__text__p1">Explore My</p>
     <h1 class="title">Experience</h1>
   </div>
-  <article class="window">
+
+  <div class="flex">
+  <article class="window none3">
     <div class="title-bar">
       <div class="buttons">
         <div class="button close"></div>
@@ -226,7 +214,7 @@
       </div>
     </div>
 </article>
-    <article class="window">
+    <article class="window none3">
       <div class="title-bar">
         <div class="buttons">
           <div class="button close"></div>
@@ -235,7 +223,7 @@
         </div>
         <span></span>
       </div>
-      <div class="content flex-col">
+      <div class="content flex-col ">
         <h2 class="experience-sub-title">Backend Development</h2>
         <div class="article-container">
           <article>
@@ -268,7 +256,7 @@
           </article>
         </div>
     </article>
-    <article class="window">
+    <article class="window none3">
       <div class="title-bar">
         <div class="buttons">
           <div class="button close"></div>
@@ -310,16 +298,14 @@
           </article>
         </div>
     </article>
-
+</div>
   </article>
 
     </div>
-  </div>
-
-
     
-      <div class="flex-col">
-        <article class="window">
+ 
+    <div class="flex-col">
+      <article class="window">
           <div class="title-bar">
             <div class="buttons">
               <div class="button close"></div>
@@ -328,11 +314,13 @@
             </div>
             <span></span>
           </div>
-          <div class="content flex-col">
+          <div class="content flex-col" id="toggleDiv4">
             <p class="section__text__p1">Browse My Recent</p>
             <h1 class="title">Projects</h1>
           </div>
-          <article class="window">
+
+<div class="flex">
+          <article class="window none4">
             <div class="title-bar">
               <div class="buttons">
                 <div class="button close"></div>
@@ -356,7 +344,7 @@
               </div>
             </div>
           </article>
-          <article class="window">
+          <article class="window none4">
             <div class="title-bar">
               <div class="buttons">
                 <div class="button close"></div>
@@ -380,7 +368,7 @@
               </div>
             </div>
           </article>
-          <article class="window">
+          <article class="window none4">
             <div class="title-bar">
               <div class="buttons">
                 <div class="button close"></div>
@@ -404,21 +392,22 @@
               </div>
             </div>
           </article>
-    
+</div>    
+
         </article>
   
   
 
   </div> 
-
+ </div>
+</div>
 </div>
     </section>
   </div>
   </article>
 
-
-    
-    
+  </main>
+  <footer>
     <div class="flex2 justify-center2 p20">
       <div>   
 
@@ -434,10 +423,8 @@
         </div>
 </div>
 </div>
-  </main>
-  <footer>
   </footer>
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>

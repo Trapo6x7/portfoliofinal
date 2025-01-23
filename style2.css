@@ -9,14 +9,18 @@ body {
   background-size: cover; /* Couvre tout l'écran */
   background-position: center center; /* Centre l'image */
   background-repeat: no-repeat; /* Empêche la répétition de l'image */
-  height: 167vh; /* Assure que le body prend toute la hauteur de la fenêtre */
+  height: 100vh; /* Assure que le body prend toute la hauteur de la fenêtre */
   margin: 0; /* Retire les marges par défaut */
   cursor: url('./assets/pixelcursor.cur') 10 10, auto;
+  display: flex; /* Active le mode flexbox */
+  flex-direction: column; /* Si les éléments doivent être empilés verticalement */
+  justify-content: space-between; /* Distribue les éléments avec un espace entre eux */
 }
 
 button a {
   cursor: url('./assets/clickpixel.cur')10 10, pointer;
 }
+
 .navbar {
   background: linear-gradient(to bottom, #f7f7f7, #e2e2e2);
   border-bottom: 1px solid #c0c0c0;
@@ -94,7 +98,7 @@ grande fenetre */
   border: 1px solid #c0c0c0;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: 75%;
+  width: 50%;
   margin: 20px auto;
   overflow: hidden;
 }
@@ -421,4 +425,15 @@ a:hover {
 
 .p20{
   padding: 20px;
+}
+
+.none1,
+.none2,
+.none3,
+.none4{
+  display: none;
+}
+
+.block{
+  display: block;
 }
