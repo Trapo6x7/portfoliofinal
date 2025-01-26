@@ -37,14 +37,20 @@ button a {
   font-weight: bold;
   color: black;
 }
-
+.voirplus{
+  text-align: right;
+  margin-top: 5px;
+}
+.hide{
+  display: none;
+}
 .window {
   background: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
   border: 1px solid #c0c0c0;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: 400px;
-  margin: 20px auto;
+  width: 300px;
+  margin: 10px auto;
   overflow: hidden;
 }
 
@@ -163,9 +169,12 @@ grande fenetre */
 
 .absolute{
     position: absolute;
+    left: 30%;
 }
 .relative{
     position: relative;
+    top: 20px;
+    right: -170px;
 }
 
 section {
@@ -421,6 +430,9 @@ a:hover {
 }
 .justify-center{
   justify-content: center;
+}
+.justify-left{
+  justify-content: left;
 }
 
 .p20{

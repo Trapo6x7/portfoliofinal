@@ -8,6 +8,8 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style2.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -54,11 +56,11 @@
     <span></span>
   </div>
   <div class="content flex-col">
-    <section class="flex justify-center">
-<div class="flex-col justify-center">
-<div class="flex">
-    <div id="profile">
-      <article class="window">
+    <section id="center1" class="flex justify-center">
+<div  class="flex-col justify-center">
+<div  id="bigwindow" class="flex">
+    <div>
+      <article id="toggleDiv1" class="window">
         <div class="title-bar">
           <div class="buttons">
             <div class="button close"></div>
@@ -68,10 +70,11 @@
           <span></span>
         </div>
         <div class="content flex-col">
-          <div id="toggleDiv1">
+          <div >
             <p class="section__text__p1">Hello; I'm</p>
             <h1 class="title">Mathias Chambriard</h1>
             <p class="section__text__p2">Junior Developer</p>
+       
           </div>
 
           <div class="btn-container">
@@ -81,8 +84,11 @@
             <button class="btn btn-color-1" onclick="location.href='./#contact'">
               Contact Info
             </button>
-          </div>
-        </div>    <article class="window none1">
+              </div>
+              <p class="voirplus"><i class="fas fa-plus"></i></p>
+        </div>  
+      </article>
+      <article class="window none1">
         <div class="title-bar">
           <div class="buttons">
             <div class="button close"></div>
@@ -100,17 +106,16 @@
                 class="icon" /></a>
 
           </div>
+          <!-- <p class="voirplus"><i class="fas fa-minus"></i></p> -->
         </div>
       </article>
-      </article>
-  
     </div>
 
     <div>
         <div class="flex">
           <div class="flex-col">
     </div>
-      <article class="window">
+      <article id="toggleDiv2" class="window">
         <div class="title-bar">
           <div class="buttons">
             <div class="button close"></div>
@@ -120,7 +125,7 @@
           <span></span>
         </div>
         <div class="content flex-col">
-          <p id="toggleDiv2">
+          <p >
             <!-- Développeur débutant avec une expérience confirmée en graphisme,
             je combine créativité et compétences techniques pour concevoir des
             interfaces esthétiques et fonctionnelles. Ma maîtrise du design
@@ -156,7 +161,7 @@
 </div>
 <div class="flex">
    <div class="flex-col">    
-    <article class="window">
+    <article  id="toggleDiv3" class="window">
   <div class="title-bar">
     <div class="buttons">
       <div class="button close"></div>
@@ -165,7 +170,7 @@
     </div>
     <span></span>
   </div>
-  <div class="content flex-col" id="toggleDiv3">
+  <div class="content flex-col">
     <p class="section__text__p1">Explore My</p>
     <h1 class="title">Experience</h1>
   </div>
@@ -305,7 +310,7 @@
     
  
     <div class="flex-col">
-      <article class="window">
+      <article id="toggleDiv4" class="window">
           <div class="title-bar">
             <div class="buttons">
               <div class="button close"></div>
@@ -314,7 +319,7 @@
             </div>
             <span></span>
           </div>
-          <div class="content flex-col" id="toggleDiv4">
+          <div class="content flex-col">
             <p class="section__text__p1">Browse My Recent</p>
             <h1 class="title">Projects</h1>
           </div>
