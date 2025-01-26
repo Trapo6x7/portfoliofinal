@@ -62,6 +62,7 @@ button a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .window .title-bar .buttons {
@@ -104,7 +105,9 @@ grande fenetre */
   border: 1px solid #c0c0c0;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: 50%;
+  width: 50%; /* Ou une valeur fixe, si nécessaire */
+  max-width: 100%; /* Évite les débordements */
+  box-sizing: border-box; /* Inclut les bordures/padding */
   margin: 20px auto;
   overflow: scroll;
 }
@@ -114,9 +117,11 @@ grande fenetre */
   border-bottom: 1px solid #c0c0c0;
   color: black;
   padding: 5px 10px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box; /* Pour inclure le padding dans la largeur */
 }
 
 .window2 .title-bar .buttons {
