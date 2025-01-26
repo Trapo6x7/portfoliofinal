@@ -9,8 +9,8 @@ div4.addEventListener("click", toggleDiv4);
 
 const divHide1 = document.querySelector(".none1");
 const divHide2 = document.querySelector(".none2");
-const divHide3 = document.querySelector(".none3");
-const divHide4 = document.querySelector(".none4");
+const divHide3 = document.querySelectorAll(".none3");
+const divHide4 = document.querySelectorAll(".none4");
 const open1 = document.querySelector("#open1");
 const bw = document.querySelector("#bigwindow");
 const contener = document.querySelector("#basewindow");
@@ -38,31 +38,35 @@ function toggleDiv2() {
   div4.classList.toggle("hide");
   bw.classList.toggle("flex");
   center1.classList.toggle("justify-center");
-  contener.classList.toggle("heightWindow");
+  contener.classList.toggle("heightWindow2");
 }
 
 function toggleDiv3() {
-  divHide3.classList.toggle("block");
-  divHide3.classList.toggle("relative");
+  divHide3.forEach(element => {
+    element.classList.toggle("block");
+  element.classList.toggle("relative");
+  });
   div3.classList.toggle("absolute");
   div2.classList.toggle("hide");
   div1.classList.toggle("hide");
   div4.classList.toggle("hide");
   // bw.classList.toggle("flex");
   center1.classList.toggle("justify-center");
-  contener.classList.toggle("heightWindow");
+  contener.classList.toggle("heightWindow3");
 }
 
 function toggleDiv4() {
-  divHide4.classList.toggle("block");
-  divHide4.classList.toggle("relative");
+  divHide4.forEach(element => {
+    element.classList.toggle("block");
+  element.classList.toggle("relative");
+  });
   div4.classList.toggle("absolute");
   div1.classList.toggle("hide");
   div3.classList.toggle("hide");
   div2.classList.toggle("hide");
   // bw.classList.toggle("flex");
   center1.classList.toggle("justify-center");
-  contener.classList.toggle("heightWindow");
+  contener.classList.toggle("heightWindow3");
 }
 
 function toggleMenu() {

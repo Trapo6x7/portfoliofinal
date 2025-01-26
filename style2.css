@@ -106,7 +106,7 @@ grande fenetre */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   width: 50%;
   margin: 20px auto;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .window2 .title-bar {
@@ -178,7 +178,7 @@ grande fenetre */
 }
 .absolute2{
     position: absolute;
-    left: 30%;
+    left: 33%;
     top: 40%
 }
 .relative2{
@@ -187,8 +187,18 @@ grande fenetre */
     right: -170px;
 }
 .heightWindow{
+  height: auto;
+  width: 50%;
+  align-items: center;
+}
+.heightWindow2{
   height: 90vh;
   width: 50%;
+  align-items: center;
+}
+.heightWindow2{
+  height: 90vh;
+  width: auto;
   align-items: center;
 }
 section {
@@ -392,7 +402,7 @@ a:hover {
   max-height: 0;
   transition: all 0.3 ease-in-out;
   z-index: 5;
-  overflow: hidden;
+  overflow: scroll;
   border-radius: 2px;
 }
 
