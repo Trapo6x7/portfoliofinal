@@ -176,7 +176,21 @@ grande fenetre */
     top: 20px;
     right: -170px;
 }
-
+.absolute2{
+    position: absolute;
+    left: 30%;
+    top: 40%
+}
+.relative2{
+    position: relative;
+    top: 40px;
+    right: -170px;
+}
+.heightWindow{
+  height: 90vh;
+  width: 50%;
+  align-items: center;
+}
 section {
     padding-top: 4vh;
     margin: 0 10rem;
