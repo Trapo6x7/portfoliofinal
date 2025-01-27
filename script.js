@@ -8,13 +8,16 @@ div4.addEventListener("click", toggleDiv4);
 const divHide1 = document.querySelectorAll(".none1");
 const divHide3 = document.querySelectorAll(".none3");
 const divHide4 = document.querySelectorAll(".none4");
+const plus = document.querySelectorAll(".fa-plus");
+console.log(plus);
+const voirPlus = document.querySelectorAll(".voirplus");
 const open1 = document.querySelector("#open1");
 const contener = document.querySelector("#basewindow");
 const center1 = document.querySelector("#center1");
-const windowContent = document.querySelector('.window2__content');
+const windowContent = document.querySelector(".window2__content");
 
 function toggleDiv1() {
-  divHide1.forEach(element => {
+  divHide1.forEach((element) => {
     element.classList.toggle("block");
     element.classList.toggle("relative");
   });
@@ -23,10 +26,17 @@ function toggleDiv1() {
   div4.classList.toggle("hide");
   center1.classList.toggle("justify-center");
   contener.classList.toggle("heightWindow3");
+  plus.forEach((element) => {
+    element.classList.toggle("fa-minus");
+    element.classList.toggle("fa-plus");
+  });
+  voirPlus.forEach((element) =>{
+    element.classList.toggle("voirplus");
+  });
 }
 
 function toggleDiv3() {
-  divHide3.forEach(element => {
+  divHide3.forEach((element) => {
     element.classList.toggle("block");
     element.classList.toggle("relative");
   });
@@ -35,10 +45,17 @@ function toggleDiv3() {
   div4.classList.toggle("hide");
   center1.classList.toggle("justify-center");
   contener.classList.toggle("heightWindow3");
+  plus.forEach((element) => {
+    element.classList.toggle("fa-minus");
+    element.classList.toggle("fa-plus");
+  });
+  voirPlus.forEach((element) =>{
+    element.classList.toggle("voirplus");
+  });
 }
 
 function toggleDiv4() {
-  divHide4.forEach(element => {
+  divHide4.forEach((element) => {
     element.classList.toggle("block");
     element.classList.toggle("relative");
   });
@@ -47,6 +64,13 @@ function toggleDiv4() {
   div3.classList.toggle("hide");
   center1.classList.toggle("justify-center");
   contener.classList.toggle("heightWindow3");
+  plus.forEach((element) => {
+    element.classList.toggle("fa-minus");
+    element.classList.toggle("fa-plus");
+  });
+  voirPlus.forEach((element) =>{
+    element.classList.toggle("voirplus");
+  });
 }
 
 function toggleMenu() {
