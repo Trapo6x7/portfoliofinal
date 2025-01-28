@@ -112,7 +112,7 @@ grande fenetre */
   overflow: scroll;
 }
 
-.window2 .title-bar {
+.window2 .title-bar2 {
   background: linear-gradient(to bottom, #ededed, #d8d8d8);
   border-bottom: 1px solid #c0c0c0;
   color: black;
@@ -122,14 +122,19 @@ grande fenetre */
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box; /* Pour inclure le padding dans la largeur */
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; /* Assure que la barre reste au-dessus du contenu */
 }
 
-.window2 .title-bar .buttons {
+.window2 .title-bar2 .buttons {
   display: flex;
   gap: 5px;
 }
 
-.window2 .title-bar .button {
+.window2 .title-bar2 .button {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -137,17 +142,17 @@ grande fenetre */
   cursor: pointer;
 }
 
-.window2 .title-bar .button.close {
+.window2 .title-bar2 .button.close {
   background-color: #ff5e57;
   border-color: #cc4a48;
 }
 
-.window2 .title-bar .button.minimize {
+.window2 .title-bar2 .button.minimize {
   background-color: #ffcc00;
   border-color: #d4a700;
 }
 
-.window2 .title-bar .button.maximize {
+.window2 .title-bar2 .button.maximize {
   background-color: #28c940;
   border-color: #1f9e30;
 }
@@ -289,6 +294,7 @@ section {
 
 .flex {
   display: flex;
+  gap: 5%
 }
 .flex2 {
   display: flex;
