@@ -7,7 +7,7 @@ body {
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url(assets/10-0_10.1--thumb.png);
   background-size: cover; /* Couvre tout l'écran */
-  background-position: center center; /* Centre l'image */
+  background-position: center; /* Centre l'image */
   background-repeat: no-repeat; /* Empêche la répétition de l'image */
   height: 100vh; /* Assure que le body prend toute la hauteur de la fenêtre */
   margin: 0; /* Retire les marges par défaut */
@@ -44,6 +44,7 @@ button a {
 .hide{
   display: none;
 }
+
 .window {
   background: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
   border: 1px solid #c0c0c0;
@@ -292,6 +293,18 @@ section {
   gap: 1%;
 }
 
+.imageProfil{
+border-radius: 8px;
+}
+.info{
+  font-size: 15px;
+}
+.flex-col2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .flex {
   display: flex;
   gap: 5%
@@ -469,9 +482,21 @@ a:hover {
 .justify-left{
   justify-content: left;
 }
-
+.space-between{
+  justify-content: space-between;
+  height: 200px;
+}
+.space-around{
+  justify-content: space-between;
+  height: 200px;
+}
 .p20{
   padding: 20px;
+}
+.experience-sub-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .none1,
