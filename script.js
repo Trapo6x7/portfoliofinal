@@ -11,6 +11,14 @@ const divHides = {
   div4: document.querySelectorAll(".none4"),
 };
 
+const navs= {
+  nav1 : document.querySelector('#about'),
+  nav2 : document.querySelector('#projects'),
+  nav3 : document.querySelector('#experience'),
+}
+
+console.log(navs);
+
 const plusIcons = document.querySelectorAll(".fa-plus");
 const voirPlusElements = document.querySelectorAll(".voirplus");
 const contener = document.querySelector("#basewindow");
@@ -73,19 +81,6 @@ divs.div1.addEventListener("click", () => toggleDiv("div1"));
 divs.div3.addEventListener("click", () => toggleDiv("div3"));
 divs.div4.addEventListener("click", () => toggleDiv("div4"));
 
-// Gestion du menu hamburger
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-
-  // Animation d'ouverture/fermeture du menu avec GSAP
-  gsap.to(menu, {
-    duration: 0.5,
-    height: menu.classList.contains("open") ? 0 : "auto",
-    onComplete: () => menu.classList.toggle("open"),
-  });
-
-  icon.classList.toggle("open");
-}
-
-document.querySelector(".hamburger-icon").addEventListener("click", toggleMenu);
+navs.nav1.addEventListener("click", () => toggleDiv("div1"));
+navs.nav2.addEventListener("click", () => toggleDiv("div3"));
+navs.nav3.addEventListener("click", () => toggleDiv("div4"));

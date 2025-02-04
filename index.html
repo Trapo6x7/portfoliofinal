@@ -19,27 +19,10 @@
         <div class="logo"><!-- image ici --></div>
         <div>
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" id="about">About</a></li>
+            <li><a href="#projects" id="projects">Projects</a></li>
+            <li><a href="#experience" id="experience">Experience</a></li>
           </ul>
-        </div>
-      </nav>
-      <nav id="hamburger-nav">
-        <div class="logo"><!-- image ici --></div>
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          </div>
         </div>
       </nav>
     </header>
@@ -92,7 +75,7 @@
                       <p class="voirplus"><i class="fas fa-plus"></i></p>
                     </div>
                   </article>
-                  <div class="flex">
+                  <div id="about" class="flex">
                     <article class="window none1">
                       <div class="title-bar">
                         <div class="buttons">
@@ -179,7 +162,7 @@
                       <p class="voirplus"><i class="fas fa-plus"></i></p>
                     </div>
                   </article>
-                  <div class="flex justify-center">
+                  <div  id="about" class="flex justify-center">
                     <article class="window none3">
                       <div class="title-bar">
                         <div class="buttons">
@@ -193,7 +176,7 @@
                         <h2 class="experience-sub-title">
                           Frontend
                         </h2>
-                        <div class="article-container flex space-around">
+                        <div  class="article-container flex space-around">
                           <article class="flex-col justify-center2">
                            <img
                               src="./assets/checkmark.png"
@@ -381,7 +364,7 @@
                     </div>
                   </article>
 
-                  <div class="flex">
+                  <div id="flexprojects" class="flex">
                     <article class="window none4">
                       <div class="title-bar">
                         <div class="buttons">
@@ -498,8 +481,8 @@
         </div>
       </article>
     </main>
-    <footer>
-      <div class="flex2 justify-center2 p20">
+    <footer class="flex2 justify-center2 p20">
+     
         <div>
           <h1 class="title">Contact Me</h1>
         </div>
@@ -512,7 +495,7 @@
             <p><a href="https://www.linkedin.com/in/mathias-chambriard-803949237/">LinkedIn</a></p>
           </div>
         </div>
-      </div>
+   
     </footer>
     <script src="./script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>

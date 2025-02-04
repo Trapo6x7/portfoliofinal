@@ -232,7 +232,11 @@ section {
   height: 200px;
 }
 /* ICONS */
-
+.project-img {
+  border-radius: 2rem;
+  width: auto;
+  height: 90%;
+}
 .icon {
   cursor: pointer;
   height: 2rem;
