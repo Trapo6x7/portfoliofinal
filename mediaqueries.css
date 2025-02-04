@@ -1,21 +1,21 @@
 @media screen and (max-width: 1250px) {
   .window2 {
     display: block;
-    width: auto;
+    width: 90vw;
   }
   .heightWindow2{
     height: 200vh;
   }
   .window {
     width: 90%;
-    min-width: 300px; /* Pour éviter que ça soit trop large */
-    position: static; /* Enlève tout positionnement */
+    min-width: 300px; 
+    position: static; 
     transform: none;
     opacity: 1;
   }
 
   .window__title-bar {
-    cursor: default; /* Désactive les interactions */
+    cursor: default; 
   }
 #section2{
   display: flex;
