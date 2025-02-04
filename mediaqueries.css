@@ -1,4 +1,4 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1250px) {
   .window2 {
     display: block;
     width: auto;
@@ -8,7 +8,7 @@
   }
   .window {
     width: 90%;
-    max-width: 400px; /* Pour éviter que ça soit trop large */
+    min-width: 300px; /* Pour éviter que ça soit trop large */
     position: static; /* Enlève tout positionnement */
     transform: none;
     opacity: 1;
@@ -17,6 +17,10 @@
   .window__title-bar {
     cursor: default; /* Désactive les interactions */
   }
+#section2{
+  display: flex;
+  flex-direction: column;
+}
 
   #flexprojects, #about, #experience{
 flex-direction: column;

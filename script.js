@@ -55,8 +55,6 @@ function toggleDiv(divKey) {
     divs[key].classList.toggle("hide");
   });
 
-  // Mise à jour des classes pour les éléments globaux
-  center1.classList.toggle("justify-center");
 
   // Mise à jour des icônes avec GSAP
   gsap.to(plusIcons, {
