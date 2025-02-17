@@ -15,6 +15,7 @@ body {
   display: flex; /* Active le mode flexbox */
   flex-direction: column; /* Si les éléments doivent être empilés verticalement */
   justify-content: space-between; /* Distribue les éléments avec un espace entre eux */
+  overflow-y: none;
 }
 
 button a {
@@ -221,6 +222,11 @@ section {
 
 .section-container {
   display: flex;
+}
+
+.draggable {
+  position: absolute; /* Important pour pouvoir le déplacer */
+  cursor: grab;
 }
 .article-container {
   display: flex;

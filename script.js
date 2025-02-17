@@ -82,3 +82,53 @@ divs.div4.addEventListener("click", () => toggleDiv("div4"));
 navs.nav1.addEventListener("click", () => toggleDiv("div1"));
 navs.nav2.addEventListener("click", () => toggleDiv("div3"));
 navs.nav3.addEventListener("click", () => toggleDiv("div4"));
+
+document.addEventListener("DOMContentLoaded", () => {
+  const draggable = document.querySelector(".draggable");
+  let offsetX = 0, offsetY = 0, isDragging = false;
+
+  // Fonction pour centrer la fenêtre
+  const centerWindow = () => {
+      const centerX = (window.innerWidth - draggable.clientWidth) / 2;
+      const centerY = (window.innerHeight - draggable.clientHeight) / 2;
+      draggable.style.left = `${centerX}px`;
+      draggable.style.top = `${centerY}px`;
+  };
+
+  // Désactiver le déplacement sur mobile (écrans < 768px)
+  if (window.innerWidth < 768) return;
+
+  draggable.addEventListener("mousedown", (e) => {
+      isDragging = true;
+      offsetX = e.clientX - draggable.offsetLeft;
+      offsetY = e.clientY - draggable.offsetTop;
+      draggable.style.cursor = "grabbing";
+  });
+
+  document.addEventListener("mousemove", (e) => {
+      if (!isDragging) return;
+
+      let newX = e.clientX - offsetX;
+      let newY = e.clientY - offsetY;
+
+      const maxX = window.innerWidth - draggable.clientWidth;
+      const maxY = window.innerHeight - draggable.clientHeight;
+
+      newX = Math.max(0, Math.min(newX, maxX));
+      newY = Math.max(0, Math.min(newY, maxY));
+
+      draggable.style.left = `${newX}px`;
+      draggable.style.top = `${newY}px`;
+  });
+
+  document.addEventListener("mouseup", () => {
+      isDragging = false;
+      draggable.style.cursor = "grab";
+  });
+
+  // Replacer au centre si la fenêtre est redimensionnée
+  window.addEventListener("resize", centerWindow);
+
+  // Placer au centre au chargement
+  centerWindow();
+});
