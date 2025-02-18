@@ -11,17 +11,13 @@ body {
   background-repeat: no-repeat; /* Empêche la répétition de l'image */
   height: 100vh; /* Assure que le body prend toute la hauteur de la fenêtre */
   margin: 0; /* Retire les marges par défaut */
-  cursor: url('./assets/pixelcursor.cur') 10 10, auto;
   display: flex; /* Active le mode flexbox */
   flex-direction: column; /* Si les éléments doivent être empilés verticalement */
   justify-content: space-between; /* Distribue les éléments avec un espace entre eux */
   overflow-y: none;
 }
 
-button a {
-  cursor: url('./assets/clickpixel.cur')10 10, pointer;
-}
-.imgdossier{
+.imgdossier {
   width: 50px;
   height: auto;
   justify-content: center;
@@ -44,11 +40,11 @@ button a {
   font-weight: bold;
   color: black;
 }
-.voirplus{
+.voirplus {
   text-align: right;
   margin-top: 5px;
 }
-.hide{
+.hide {
   display: none;
 }
 
@@ -70,7 +66,6 @@ button a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .window .title-bar .buttons {
@@ -180,52 +175,52 @@ grande fenetre */
 }
 
 .project-img {
-    border-radius: 2rem;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-  }
+  border-radius: 2rem;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
 
-.absolute{
-    position: absolute;
-    left: 30%;
+.absolute {
+  position: absolute;
+  left: 30%;
 }
-.relative{
-    position: relative;
-    top: 20px;
-    right: -170px;
+.relative {
+  position: relative;
+  top: 20px;
+  right: -170px;
 }
-.absolute2{
-    position: absolute;
-    left: 33%;
-    top: 40%
+.absolute2 {
+  position: absolute;
+  left: 33%;
+  top: 40%;
 }
-.relative2{
-    position: relative;
-    top: 40px;
-    right: -170px;
+.relative2 {
+  position: relative;
+  top: 40px;
+  right: -170px;
 }
-.heightWindow{
+.heightWindow {
   height: auto;
   width: 50%;
   align-items: center;
 }
-.heightWindow2{
+.heightWindow2 {
   height: 90vh;
   width: 50%;
   align-items: center;
 }
-.heightWindow2{
+.heightWindow2 {
   height: 90vh;
   width: auto;
   align-items: center;
 }
 section {
-    padding-top: 4vh;
-    margin: 0 10rem;
-    box-sizing: border-box;
-    min-height: fit-content;
-  }
+  padding-top: 4vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
 
 .section-container {
   display: flex;
@@ -311,12 +306,12 @@ section {
   gap: 1%;
 }
 
-.imageProfil{
-border-radius: 8px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.imageProfil {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.info{
+.info {
   font-size: 15px;
 }
 .flex-col2 {
@@ -327,17 +322,17 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
 .flex {
   display: flex;
-  gap: 5%
+  gap: 5%;
 }
 .flex2 {
   display: flex;
-  gap: 5%
+  gap: 5%;
 }
 .flex3 {
   display: flex;
-  gap: 10%
+  gap: 10%;
 }
-.w33{
+.w33 {
   width: 33%;
 }
 html {
@@ -492,24 +487,24 @@ a:hover {
   transform: none;
 }
 
-.justify-center2{
+.justify-center2 {
   justify-content: center;
   align-items: center;
 }
-.justify-center{
+.justify-center {
   justify-content: center;
 }
-.justify-left{
+.justify-left {
   justify-content: left;
 }
-.space-between{
+.space-between {
   justify-content: space-between;
   height: 200px;
 }
-.space-around{
+.space-around {
   height: 200px;
 }
-.p20{
+.p20 {
   padding: 20px;
 }
 .experience-sub-title {
@@ -521,10 +516,16 @@ a:hover {
 .none1,
 .none2,
 .none3,
-.none4{
+.none4 {
   display: none;
 }
 
-.block{
+.block {
   display: block;
+}
+
+@media (min-height: 680px) {
+  .imgdossier {
+    display: none;
+  }
 }
