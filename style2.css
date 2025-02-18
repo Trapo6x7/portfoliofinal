@@ -524,7 +524,7 @@ a:hover {
   display: block;
 }
 
-@media (min-height: 680px) {
+@media screen and (max-height: 680px) {
   .imgdossier {
     display: none;
   }

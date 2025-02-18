@@ -146,5 +146,5 @@ const imgDossier = document.querySelector(".imgdossier");
 
 // Ajout de l'événement au clic sur l'image pour enlever la classe hide
 imgDossier.addEventListener("click", () => {
-  basewindow.classList.remove("hide");
+  basewindow.classList.toggle("hide");
 });
