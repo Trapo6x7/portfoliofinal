@@ -132,3 +132,19 @@ document.addEventListener("DOMContentLoaded", () => {
   // Placer au centre au chargement
   centerWindow();
 });
+
+// Sélection du bouton de fermeture
+const closeButton = document.querySelector(".button.close.hidingDiv");
+
+// Ajout de l'événement au bouton pour cacher la fenêtre
+closeButton.addEventListener("click", () => {
+  basewindow.classList.add("hide");
+});
+
+// Sélection de l'image
+const imgDossier = document.querySelector(".imgdossier");
+
+// Ajout de l'événement au clic sur l'image pour enlever la classe hide
+imgDossier.addEventListener("click", () => {
+  basewindow.classList.remove("hide");
+});

@@ -21,7 +21,13 @@ body {
 button a {
   cursor: url('./assets/clickpixel.cur')10 10, pointer;
 }
-
+.imgdossier{
+  width: 50px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
 .navbar {
   background: linear-gradient(to bottom, #f7f7f7, #e2e2e2);
   border-bottom: 1px solid #c0c0c0;
