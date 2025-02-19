@@ -91,33 +91,40 @@ if (window.innerWidth < 768) {
   return;
 }
 
-  draggable.addEventListener("mousedown", (e) => {
-      isDragging = true;
-      offsetX = e.clientX - draggable.offsetLeft;
-      offsetY = e.clientY - draggable.offsetTop;
-      draggable.style.cursor = "grabbing";
-  });
+draggable.addEventListener("mousedown", (e) => {
+  isDragging = true;
 
-  document.addEventListener("mousemove", (e) => {
-      if (!isDragging) return;
+  // Récupérer la position réelle de l'élément
+  const rect = draggable.getBoundingClientRect();
+  offsetX = e.clientX - rect.left;
+  offsetY = e.clientY - rect.top;
 
-      let newX = e.clientX - offsetX;
-      let newY = e.clientY - offsetY;
+  draggable.style.cursor = "grabbing";
+});
 
-      const maxX = window.innerWidth - draggable.clientWidth;
-      const maxY = window.innerHeight - draggable.clientHeight;
+document.addEventListener("mousemove", (e) => {
+  if (!isDragging) return;
 
-      newX = Math.max(0, Math.min(newX, maxX));
-      newY = Math.max(0, Math.min(newY, maxY));
+  let newX = e.clientX - offsetX;
+  let newY = e.clientY - offsetY;
 
-      draggable.style.left = `${newX}px`;
-      draggable.style.top = `${newY}px`;
-  });
+  const maxX = window.innerWidth - draggable.clientWidth;
+  const maxY = window.innerHeight - draggable.clientHeight;
 
-  document.addEventListener("mouseup", () => {
-      isDragging = false;
-      draggable.style.cursor = "grab";
-  });
+  // Autoriser à dépasser de moitié
+  newX = Math.max(-draggable.clientWidth / 2, Math.min(newX, maxX));
+  newY = Math.max(-draggable.clientHeight / 2, Math.min(newY, maxY));
+
+  // Appliquer la position
+  draggable.style.left = `${newX}px`;
+  draggable.style.top = `${newY}px`;
+  draggable.style.transform = "none"; // Désactiver le centrage précédent
+});
+
+document.addEventListener("mouseup", () => {
+  isDragging = false;
+  draggable.style.cursor = "grab";
+});
 
   // Replacer au centre si la fenêtre est redimensionnée
   window.addEventListener("resize", centerWindow);
