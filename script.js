@@ -17,8 +17,6 @@ const navs= {
   nav3 : document.querySelector('#experience'),
 }
 
-console.log(navs);
-
 const plusIcons = document.querySelectorAll(".fa-plus");
 const voirPlusElements = document.querySelectorAll(".voirplus");
 const contener = document.querySelector("#basewindow");
