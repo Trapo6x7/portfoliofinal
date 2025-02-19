@@ -1,3 +1,9 @@
+@media screen and (max-height: 750px) {
+  .imgdossier {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1250px) {
   .window2 {
     display: block;
