@@ -6,6 +6,12 @@
     display: block;
     width: 90vw;
   }
+  .window2 .content{
+    padding : 0;
+  }
+  .window .content{
+    padding : 15px;
+  }
   .heightWindow2 {
     height: 200vh;
   }
