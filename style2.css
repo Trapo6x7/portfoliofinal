@@ -301,11 +301,15 @@ section {
 .btn-container {
   gap: 1rem;
 }
+.logo {
+  width: 20px;
+  height: auto;
+}
 
 .flex-col {
   display: flex;
   flex-direction: column;
-  gap: 1%;
+  gap: 5%;
 }
 .flex-col2 {
   display: flex;
