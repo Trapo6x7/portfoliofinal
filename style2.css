@@ -113,6 +113,7 @@ grande fenetre */
   box-sizing: border-box; /* Inclut les bordures/padding */
   margin: 20px auto;
   overflow: scroll;
+  position: absolute;
 }
 
 .window2 .title-bar2 {
@@ -183,11 +184,12 @@ grande fenetre */
 
 .absolute {
   position: absolute;
-  left: 30%;
+  left: 10%;
+  top: 10%;
 }
 .relative {
   position: relative;
-  top: 20px;
+  top: 40px;
   right: -170px;
 }
 .absolute2 {
@@ -322,7 +324,7 @@ section {
 
 .flex {
   display: flex;
-  gap: 5%;
+  gap: 1%;
 }
 .flex2 {
   display: flex;

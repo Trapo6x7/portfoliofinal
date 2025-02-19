@@ -89,11 +89,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Fonction pour centrer la fenêtre
   const centerWindow = () => {
-      const centerX = (window.innerWidth - draggable.clientWidth) / 2;
-      const centerY = (window.innerHeight - draggable.clientHeight) / 2;
-      draggable.style.left = `${centerX}px`;
-      draggable.style.top = `${centerY}px`;
-  };
+    draggable.style.left = "50%";
+    draggable.style.top = "50%";
+    draggable.style.transform = "translate(-50%, -50%)"; 
+};
 
   // Désactiver le déplacement sur mobile (écrans < 768px)
   if (window.innerWidth < 768) return;
@@ -144,7 +143,9 @@ closeButton.addEventListener("click", () => {
 // Sélection de l'image
 const imgDossier = document.querySelector(".imgdossier");
 
-// Ajout de l'événement au clic sur l'image pour enlever la classe hide
 imgDossier.addEventListener("click", () => {
   basewindow.classList.toggle("hide");
+  if (!basewindow.classList.contains("hide")) {
+    setTimeout(centerWindow, 10); // Petit délai pour s'assurer que la div est affichée avant le centrage
+  }
 });
