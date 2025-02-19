@@ -94,8 +94,13 @@ document.addEventListener("DOMContentLoaded", () => {
     draggable.style.transform = "translate(-50%, -50%)"; 
 };
 
-  // Désactiver le déplacement sur mobile (écrans < 768px)
-  if (window.innerWidth < 768) return;
+// Désactiver le déplacement sur mobile (écrans < 768px)
+if (window.innerWidth < 768) {
+  baseWindow.style.left = "50%";
+  baseWindow.style.top = "30%";
+  baseWindow.style.transform = "translate(-50%, -50%)";
+  return;
+}
 
   draggable.addEventListener("mousedown", (e) => {
       isDragging = true;
