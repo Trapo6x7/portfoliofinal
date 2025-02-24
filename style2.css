@@ -108,9 +108,9 @@ grande fenetre */
   border: 1px solid #c0c0c0;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width:55%; /* Ou une valeur fixe, si nécessaire */
-  max-width: 100%; /* Évite les débordements */
-  box-sizing: border-box; /* Inclut les bordures/padding */
+  width:55%; 
+  max-width: 100%; 
+  box-sizing: border-box;
   margin: 20px auto;
   overflow: scroll;
   position: absolute;
@@ -322,7 +322,9 @@ section {
 .imageProfil {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: 90%;
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
 }
 
 .info {
