@@ -108,7 +108,7 @@ grande fenetre */
   border: 1px solid #c0c0c0;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width:55%; 
+  width:60%; 
   max-width: 100%; 
   box-sizing: border-box;
   margin: 20px auto;
@@ -218,12 +218,11 @@ grande fenetre */
   align-items: center;
 }
 section {
-  padding-top: 4vh;
+  padding-top: 7vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
-
 .section-container {
   display: flex;
 }
