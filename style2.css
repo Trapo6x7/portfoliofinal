@@ -218,7 +218,7 @@ grande fenetre */
   align-items: center;
 }
 section {
-  padding-top: 7vh;
+  padding:8vh 0;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
