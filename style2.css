@@ -357,11 +357,14 @@ html {
 }
 
 p {
-  color: #000000;
+  color: #424242;
+  font-size: 15px;
 }
 
 h1,
+h2,
 h3 {
+  font-size: 20px;
   color: #000000;
 }
 /* TRANSITION */
