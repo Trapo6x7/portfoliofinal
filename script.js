@@ -17,7 +17,7 @@ const contener = document.querySelector("#basewindow");
 const center1 = document.querySelector("#center1");
 
 // Taille fixe du conteneur
-const containerFixedHeight = 500; // Exemple : 500px
+const containerFixedHeight = 550; // Exemple : 500px
 
 // Appliquer une hauteur fixe au conteneur
 contener.style.height = `${containerFixedHeight}px`;
