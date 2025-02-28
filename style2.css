@@ -59,12 +59,13 @@ body {
 }
 .window:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 15px rgba(84, 84, 84, 0.3);
 }
 .imgdossier:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 15px rgba(84, 84, 84, 0.3);
 }
+
 .window .title-bar {
   background: linear-gradient(to bottom, #ededed, #d8d8d8);
   border-bottom: 1px solid #c0c0c0;
