@@ -325,7 +325,9 @@ section {
   height: 60%;
   object-fit: cover;
 }
-
+#about{
+  padding-right: 200px;
+}
 .info {
   font-size: 15px;
 }
