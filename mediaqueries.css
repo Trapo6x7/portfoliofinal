@@ -16,7 +16,6 @@
     height: 200vh;
   }
   .window {
-    width: 90%;
     min-width: 300px;
     position: static;
     transform: none;
@@ -32,10 +31,13 @@
     display: flex;
     flex-direction: column;
   }
-
+  #about{
+    padding-right: 0;
+  }
   #flexprojects,
   #about,
-  #experience {
+  #experience,
+  #skills {
     flex-direction: column;
   }
   .flex3 {
