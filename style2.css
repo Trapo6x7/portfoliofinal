@@ -116,14 +116,25 @@ grande fenetre */
   border: 1px solid #c0c0c0;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width:60%; 
+  width:90%; 
   max-width: 100%; 
   box-sizing: border-box;
   margin: 20px auto;
-  overflow: scroll;
+  overflow: auto;
   position: absolute;
+  resize: both; /* "both" permet le redimensionnement horizontal et vertical */
 }
-
+/* Poignée visible en bas à droite */
+#basewindow::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: nwse-resize;
+}
 .window2 .title-bar2 {
   background: linear-gradient(to bottom, #ededed, #d8d8d8);
   border-bottom: 1px solid #c0c0c0;
