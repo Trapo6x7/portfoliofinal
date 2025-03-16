@@ -5,6 +5,7 @@
   .window2 {
     display: block;
     width: 90vw;
+    resize: unset;
   }
   .window2 .content{
     padding : 0;
